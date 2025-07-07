@@ -1,0 +1,188 @@
+/* =============================
+   1. Reset Básico
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total del elemento */
+}
+
+/* =============================
+   2. Estilos Generales del Body
+============================= */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
+  background-color: #fff9f0; /* Fondo cálido */
+  color: #333; /* Color de texto oscuro */
+}
+
+/* =============================
+   3. Encabezado y Navegación
+============================= */
+.header {
+  background-color: #efd426; /* Color amarillo claro */
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.header__logo {
+  font-size: 2em;
+  color: #2b2b2b;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 40px;
+  height: auto;
+}
+
+.nav {
+  list-style: none; /* Quitar viñetas */
+  display: flex;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: bold;
+  margin-right: 20px; /* Separación entre enlaces */
+}
+
+/* =============================
+   4. Sección Promocional
+============================= */
+.header__promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si no caben */
+  text-align: left;
+}
+
+.header__promo-image {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.header__promo-text {
+  max-width: 500px;
+  color: #444;
+}
+
+.header__promo-text h2 {
+  font-size: 1.8em;
+  color: #ff5733; /* Color llamativo */
+  margin-bottom: 10px;
+}
+
+.header__promo-text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* =============================
+   5. Contenido Principal
+============================= */
+.main {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section__title {
+  font-size: 2em;
+  color: #ff5733;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section__text {
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.section__btn-video{
+  display: block;
+  width: 300px;
+  margin: 20px auto ; 
+  text-align: center;
+  color: white;
+  background-color: rgba(112, 24, 200, 0.505);
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  
+}
+
+/* =============================
+   6. Lista de Productos
+============================= */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.product-card {
+  background-color: #e0f7fa;
+  border: 2px dashed #26c6da;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card__image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card__name {
+  font-size: 1.2em;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.product-card__description {
+  color: #004d40;
+}
+
+/* =============================
+   7. Pie de Página
+============================= */
+.footer {
+  background-color: #2b2b2b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+
